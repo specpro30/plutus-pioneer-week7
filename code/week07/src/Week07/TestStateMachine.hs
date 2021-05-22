@@ -12,7 +12,7 @@
 {-# LANGUAGE TypeFamilies          #-}
 {-# LANGUAGE TypeOperators         #-}
 
-module Week07.TestStateMachine where
+module Week07.TestStateMachine where                        -- used to test the StateMachine version of the Alice and Bob game 
 
 import           Control.Monad              hiding (fmap)
 import           Control.Monad.Freer.Extras as Extras
@@ -25,7 +25,7 @@ import           Plutus.Trace.Emulator      as Emulator
 import           PlutusTx.Prelude
 import           Wallet.Emulator.Wallet
 
-import           Week07.StateMachine
+import           Week07.StateMachine                        -- only line that is different from Test.hs is to import the StateMachine
 
 test :: IO ()
 test = do
